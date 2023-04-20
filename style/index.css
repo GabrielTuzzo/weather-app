@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@300&family=Mukta:wght@500&family=Nunito:wght@300&family=Quicksand:wght@400;500;600&family=Raleway:wght@200;300;500&family=Rubik:wght@400;500&family=Work+Sans:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #222;
+    font-family: "Gantari", "Helvetica Neue";
+}
+button {
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 1px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+button img {
+    width: 20px;
+    height: 20px;
+
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.search-input {
+    padding: 14px 15px;
+    font-size: 18px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 470px;
+    margin: 150px auto 0;
+    border-radius: 20px;
+    background-color: rgb(101, 175, 204);
+    padding: 40px 35px;
+}
+.img-weather {
+    width: 200px;
+    margin-top: 30px;
+}
+.humidity-img, .wind-img {
+    width: 60px;
+}
+.temp {
+    font-size: 70px;
+}
+.descrition {
+    font-size: 20px;
+}
+.city {
+    font-size: 40px;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 190px;
+    margin-top: 50px;
+}
+.wind, .humidity {
+    font-size: 30px;
+}
