@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="style/index.css">
     <title>Weather App</title>
 </head>
@@ -13,13 +14,16 @@
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Ex: Germany" class="search-input">
-            <button><img src="imgs/7-removebg-preview.png" alt=""></button>
+            <button class="btn"><img src="imgs/7-removebg-preview.png" alt=""></button>
+        </div>
+        <div class="error">
+            <p style="color: red">Invalid city name <i class="fa-solid fa-circle-exclamation"></i></p>
         </div>
         <div class="weather">
             <img src="imgs/1-removebg-preview.png" alt="" class="img-weather">
             <h1 class="temp">22°c</h1>
             <h2 class="city">New York</h2>
-        </div>
+       
         <div class="details">
             <div class="col">
                 <img src="imgs/humidity-icon-style-vector-removebg-preview.png" alt="" class="humidity-img">
@@ -37,6 +41,7 @@
             </div>
         </div>
     </div>
+    </body>
 
 
     <script src="js/index.js"></script>

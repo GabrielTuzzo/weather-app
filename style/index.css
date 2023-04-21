@@ -77,5 +77,16 @@ button img {
     margin-top: 50px;
 }
 .wind, .humidity {
-    font-size: 30px;
+    font-size: 28px;
+}
+.weather {
+    display: none;
+}
+.error {
+    display: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.fa-circle-exclamation {
+    margin-left: 1px;
 }
