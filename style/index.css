@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@300&family=Mukta:wght@500&family=Nunito:wght@300&family=Quicksand:wght@400;500;600&family=Raleway:wght@200;300;500&family=Rubik:wght@400;500&family=Work+Sans:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300&family=Poppins:wght@300&display=swap');
 
 * {
     padding: 0;
@@ -7,7 +7,7 @@
 }
 body {
     background: #222;
-    font-family: "Gantari", "Helvetica Neue";
+    font-family: 'Noto Sans SC', sans-serif;
 }
 button {
     width: 60px;
@@ -22,7 +22,6 @@ button {
 button img {
     width: 20px;
     height: 20px;
-
 }
 .search {
     display: flex;
@@ -47,10 +46,11 @@ button img {
     flex-direction: column;
     width: 90%;
     max-width: 470px;
-    margin: 150px auto 0;
+    margin: 100px auto 0;
     border-radius: 20px;
     background-color: rgb(248, 248, 248);
     padding: 40px 35px;
+    animation: none;
 }
 .img-weather {
     width: 200px;
@@ -61,12 +61,15 @@ button img {
 }
 .temp {
     font-size: 70px;
+    
 }
 .descrition {
     font-size: 20px;
+
 }
 .city {
     font-size: 40px;
+    font-family: "Poppins" , 'Helvetica Neue';
 }
 .details {
     display: flex;
@@ -75,9 +78,11 @@ button img {
     text-align: center;
     gap: 190px;
     margin-top: 50px;
+
 }
 .wind, .humidity {
     font-size: 28px;
+    font-family: "Poppins" , 'Helvetica Neue';
 }
 .weather {
     display: none;
@@ -86,7 +91,23 @@ button img {
     display: none;
     font-size: 20px;
     margin-top: 20px;
+    font-family: "Poppins" , 'Helvetica Neue';
 }
 .fa-circle-exclamation {
     margin-left: 1px;
+}
+.title {
+    margin-bottom: 40px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
 }

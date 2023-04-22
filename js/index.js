@@ -4,6 +4,7 @@ const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q='
 const searchBox = document.querySelector('.search-input')
 const searchBtn = document.querySelector('.btn')
 const weatherIcon = document.querySelector('.img-weather')
+const card = document.querySelector('.card')
 
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`)
@@ -13,6 +14,8 @@ async function checkWeather(city) {
         document.querySelector(".error").style.display = "block"
         document.querySelector('.weather').style.display = 'none'
         searchBox.style.borderColor = "red"
+        card.style.animation = '.2s rotate'
+
     } else {
         document.querySelector('.city').innerHTML = data.name
     document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + '°c'
@@ -39,6 +42,7 @@ async function checkWeather(city) {
     searchBox.style.borderColor = "black"
     document.querySelector(".error").style.display = "none"
     document.querySelector('.weather').style.display = 'block'
+    card.style.animation = 'none'
     }
 
 
